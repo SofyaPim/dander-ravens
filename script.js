@@ -12,11 +12,12 @@ collisionCanvas.height = window.innerHeight;
 
 let score = 0;
 let gameOver = false;
-ctx.font = '40px Hachi Maru Pop';
+const fontSize = window.innerWidth / 20;
+ctx.font = `${fontSize}px Hachi Maru Pop`;
 
 
 let timeToNextRaven = 0;
-let ravenInterval = 500;
+let ravenInterval = 800;
 let lastTime = 0;
 
 let ravens = [];
@@ -195,7 +196,7 @@ function animate(timestamp) {
    ravens = ravens.filter(object => !object.markedForDeletion);
    exlposions = exlposions.filter(object => !object.markedForDeletion);
    particles = particles.filter(object => !object.markedForDeletion);
-   console.log(particles);
+   // console.log(particles);
    
    if(!gameOver){
        drawScore();
