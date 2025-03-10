@@ -16,6 +16,7 @@ const fontSize = window.innerWidth / 20;
 ctx.font = `${fontSize}px Hachi Maru Pop`;
 
 
+
 let timeToNextRaven = 0;
 let ravenInterval = 800;
 let lastTime = 0;
@@ -154,10 +155,8 @@ function drawGameOver() {
    ctx.textAlign = 'center';
    ctx.fillStyle = '#FFEB3B';
 
-   ctx.fillText('Игра', canvas.width/2, canvas.height/2 - 30);
-   ctx.fillText('окончена!', canvas.width/2, canvas.height/2 );
-   ctx.fillText('Ваш счет:', canvas.width/2, canvas.height/2 + 30);
-   ctx.fillText(score, canvas.width/2, canvas.height/2 + 60);
+   ctx.fillText('Игра окончена! ', canvas.width/2, canvas.height/2);
+   ctx.fillText('Ваш счет: '+ score, canvas.width/2, canvas.height/2 + 40);
    
 }
 
