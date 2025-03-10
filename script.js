@@ -13,7 +13,7 @@ collisionCanvas.height = window.innerHeight;
 let score = 0;
 let gameOver = false;
 const fontSize = window.innerWidth / 20;
-ctx.font = `${fontSize}px Shantell Sans`;
+ctx.font = `bold ${fontSize}px Shantell Sans`;
 
 
 
@@ -156,7 +156,7 @@ function drawGameOver() {
    ctx.fillStyle = '#FFEB3B';
 
    ctx.fillText('Игра окончена! ', canvas.width/2, canvas.height/2);
-   ctx.fillText('Ваш счет: '+ score, canvas.width/2, canvas.height/2 + 40);
+   ctx.fillText('Ваш счет: '+ score, canvas.width/2, canvas.height/2 + 50);
    
 }
 
