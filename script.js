@@ -13,7 +13,7 @@ collisionCanvas.height = window.innerHeight;
 let score = 0;
 let gameOver = false;
 const fontSize = window.innerWidth / 20;
-ctx.font = `${fontSize}px Hachi Maru Pop`;
+ctx.font = `${fontSize}px Shantell Sans`;
 
 
 
