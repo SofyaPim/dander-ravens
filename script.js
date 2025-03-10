@@ -156,7 +156,7 @@ function drawGameOver() {
    ctx.fillStyle = '#FFEB3B';
 
    ctx.fillText('Игра окончена! ', canvas.width/2, canvas.height/2);
-   ctx.fillText('Ваш счет: '+ score, canvas.width/2, canvas.height/2 + 50);
+   ctx.fillText('Ваш счет: '+ score, canvas.width/2, canvas.height/2 + window.innerWidth / 10);
    
 }
 
