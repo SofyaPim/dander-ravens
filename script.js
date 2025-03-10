@@ -154,8 +154,10 @@ function drawGameOver() {
    ctx.textAlign = 'center';
    ctx.fillStyle = '#FFEB3B';
 
-   ctx.fillText('Игра окончена! ', canvas.width/2, canvas.height/2);
-   ctx.fillText('Ваш счет: '+ score, canvas.width/2, canvas.height/2 + 40);
+   ctx.fillText('Игра', canvas.width/2, canvas.height/2 - 30);
+   ctx.fillText('окончена!', canvas.width/2, canvas.height/2 );
+   ctx.fillText('Ваш счет:', canvas.width/2, canvas.height/2 + 30);
+   ctx.fillText(score, canvas.width/2, canvas.height/2 + 60);
    
 }
 
