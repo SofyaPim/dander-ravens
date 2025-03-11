@@ -147,9 +147,9 @@ class Particle {
 function drawScore() {
 
    ctx.fillStyle = '#C0C0C0';
-   ctx.fillText('Счёт: '+ score, 48, 73);
+   ctx.fillText('Счёт: '+ score, window.innerWidth / 10, 73);
    ctx.fillStyle = '#FFEB3B';
-   ctx.fillText('Счёт: '+ score, 50, 75);
+   ctx.fillText('Счёт: '+ score, window.innerWidth / 10 + 2, 75);
 }
 function drawGameOver() {
    ctx.textAlign = 'center';
