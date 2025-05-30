@@ -8,24 +8,18 @@ const collisionCtx = collisionCanvas.getContext("2d");
 collisionCanvas.width = window.innerWidth;
 collisionCanvas.height = window.innerHeight;
 
-
-
 let score = 0;
 let gameOver = false;
 const fontSize = window.innerWidth / 10;
 ctx.font = `bold ${fontSize}px Shantell Sans`;
 
-
-
 let timeToNextRaven = 0;
 let ravenInterval = 800;
 let lastTime = 0;
-
 let ravens = [];
 
 class Raven {
-   constructor(){
-   
+   constructor(){   
       this.spriteWidth = 271;
       this.spriteHeight = 194;
       this.sizeModifier = Math.random() * 0.6 + 0.4;
@@ -45,9 +39,6 @@ class Raven {
       this.randomColors = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)];
       this.color = 'rgb(' + this.randomColors[0] + ',' + this.randomColors[1] + ',' + this.randomColors[2] + ')';
       this.hasTrail = Math.random() * 0.5;
-
-
-
    }
    update(deltatime){
       if(this.y < 0 || this.y > canvas.height - this.height){
@@ -145,16 +136,14 @@ class Particle {
    }
 }
 function drawScore() {
-
-   ctx.fillStyle = '#C0C0C0';
-   ctx.fillText('Счёт: '+ score, window.innerWidth / 10, window.innerWidth / 10 );
+  ctx.fillStyle = '#C0C0C0';
+   ctx.fillText('Счёт: '+ score, 20, window.innerWidth / 20 );
    ctx.fillStyle = '#FFEB3B';
-   ctx.fillText('Счёт: '+ score, (window.innerWidth / 10) +2, window.innerWidth /10 + 20);
+   ctx.fillText('Счёт: '+ score, 20, window.innerWidth /20 + 3);
 }
 function drawGameOver() {
    ctx.textAlign = 'center';
    ctx.fillStyle = '#FFEB3B';
-
    ctx.fillText('Игра окончена! ', canvas.width/2, canvas.height/2);
    ctx.fillText('Ваш счет: '+ score, canvas.width/2, canvas.height/2 + window.innerWidth / 7);
    
