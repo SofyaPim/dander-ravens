@@ -10,7 +10,7 @@ collisionCanvas.height = window.innerHeight;
 
 let score = 0;
 let gameOver = false;
-const fontSize = window.innerWidth / 10;
+const fontSize = window.innerWidth / 20;
 ctx.font = `bold ${fontSize}px Shantell Sans`;
 
 let timeToNextRaven = 0;
